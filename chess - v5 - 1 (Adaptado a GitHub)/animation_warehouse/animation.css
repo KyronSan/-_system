@@ -1,0 +1,96 @@
+#animationContainer {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    color: white;
+    line-height: 1.4;
+}
+
+/* ===== CUADRO DE ANIMACIÓN ===== */
+#animationBox {
+    width: 260px; /* ANCHURA */
+    height: 130px; /* ALTURA */
+    background: #000;
+    border: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#animationBox img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain; /* Ajusta la imagen al contenedor */
+
+    image-rendering: pixelated;
+}
+
+/* ===== CUADRO DE DIÁLOGO ===== */
+#dialogBox {
+    width: 260px;
+    background: black;
+    border: 4px solid white;
+    padding: 10px;
+    min-height: 80px;
+    box-sizing: border-box;
+}
+
+#dialogText {
+    white-space: pre-wrap;
+}
+
+/* ===== CONTROLES ===== */
+#controls {
+    display: flex;
+    gap: 6px;
+
+    display: none; /* Oculta completamente el div */
+}
+
+#controls button {
+    background: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    background: white;
+    color: black;
+}
+
+/* ===== DIFICULTAD ===== */
+#difficultyBox {
+    display: flex;
+    gap: 6px;
+}
+
+#difficultyBox button {
+    background: black;
+    color: white;
+    border: 2px solid white;
+    padding: 6px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+#difficultyBox button:hover {
+    background: white;
+    color: black;
+}
+
+/* ===== DIFICULTAD ACTIVA ===== */
+#difficultyBox button.active {
+    background: #ffffff;
+    color: #000000;
+    border-color: #7c7c7c;
+}
