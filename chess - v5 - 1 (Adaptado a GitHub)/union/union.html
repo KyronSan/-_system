@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess + Animation Union</title>
+    <link rel="stylesheet" href="union.css">
+</head>
+<body>
+
+<div id="layout">
+    <iframe src="../chess_game.html" id="chessFrame"></iframe>
+
+    <!-- CUADRADO AZUL A UN COSTADO -->
+    <div id="blueBox"></div>
+
+    <iframe src="../animation_warehouse/animation.html" id="animationFrame"></iframe>
+</div>
+
+<!-- 👇 MENSAJES DEL AJEDREZ -->
+<div id="eventLog">
+    Esperando jugadas…
+</div>
+
+<script src="union.js"></script>
+<script src="union2.js"></script>
+</body>
+</html>
